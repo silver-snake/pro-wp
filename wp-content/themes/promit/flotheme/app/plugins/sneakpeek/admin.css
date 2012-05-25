@@ -1,0 +1,83 @@
+#flotheme-sneak-form {
+    margin-bottom: 24px;
+}
+
+#flotheme-sneak-photos ul {
+    overflow: hidden;
+    zoom:1;
+}
+#flotheme-sneak-photos ul li {
+    margin:0 10px 10px 0;
+    float: left;
+    width:500px;
+    height: 150px;
+    border: 1px solid #DFDFDF;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding:7px;
+    cursor: pointer;
+    background: #fff;
+    position:relative;
+}
+#flotheme-sneak-photos ul li:hover {
+    background: #f9f9f9;
+    border-color: #cfcfcf;
+}
+
+#flotheme-sneak-photos ul li img {
+    max-width:200px;
+    max-height: 150px;
+    width:auto;
+    height:auto;
+    float: left;
+}
+#flotheme-sneak-photos ul li .content {
+    float: right;
+    width:290px;
+}
+#flotheme-sneak-photos ul li .content label {
+    font:italic normal 1em Georgia,"Times New Roman","Bitstream Charter",Times,serif;
+    padding-left:4px;
+    line-height: 1.4;
+}
+#flotheme-sneak-photos ul li .content input,
+#flotheme-sneak-photos ul li .content textarea {
+    width:287px;
+}
+#flotheme-sneak-photos ul li .content textarea {
+    height:75px;
+    resize:none;
+}
+#flotheme-sneak-photos ul li .content input:focus,
+#flotheme-sneak-photos ul li .content textarea:focus {
+    border-color: #cfcfcf;
+}
+#flotheme-sneak-photos ul li a.delete {
+    width:10px;
+    height:10px;
+    text-indent: -9999px;
+    position: absolute;
+    right:7px;
+    top:7px;
+    background: url(delete.png) 0 0 no-repeat;
+    display: none;
+    opacity:.7;
+}
+#flotheme-sneak-photos ul li:hover a.delete {
+    display: block;
+}
+#flotheme-sneak-photos ul li:hover a.delete:hover {
+    opacity:1;
+}
+
+#flotheme-sneak-photos .highlight {
+    width:500px;
+    height: 150px;
+    background: #FFF9DF;
+    border:1px solid #FFF1AF;
+}
+
+
+#flotheme-sneak-error {
+    display: none;
+}

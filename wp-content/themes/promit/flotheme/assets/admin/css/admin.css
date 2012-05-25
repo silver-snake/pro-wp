@@ -1,0 +1,153 @@
+#flotheme {}
+.flotheme > h2 {
+    background: url(../images/flotheme_icon_32.png) 0px 15px no-repeat;
+    padding: 14px 15px 3px 40px;
+    margin-bottom: 20px;
+}
+#flotheme div.update {
+    background: #FFFFE0;
+    border: 1px solid #E6DB55;
+    padding: 5px 9px;
+    margin: 0px 20px 15px 0px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+}
+#flotheme .saving span {
+    width: 20px;
+    height: 16px;
+    background: url("../images/loader.gif") 4px 0px no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+}
+#flotheme div.box {
+    margin-bottom: 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #DFDFDF;
+    line-height: 1;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+}
+#flotheme div.box h3 {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 7px 9px;
+    margin: 0;
+    line-height: 1;
+    cursor: default;
+}
+#flotheme div.box h3 .description {
+    font-weight: normal;
+}
+#flotheme div.box div.content,
+#flotheme div.box div.content p {
+    font-size: 11px;
+    margin: 6px 6px 8px;
+    padding: 0px;
+}
+#flotheme div.box.collapsible {
+    position: relative;
+}
+#flotheme div.box.collapsible .togglebutton {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 30px;
+    height: 25px;
+    background: url("../images/toggle-arrow.gif") no-repeat 0px -4px;
+    cursor: pointer;
+}
+#flotheme div.option {
+    overflow: hidden;
+    zoom:1;
+    margin: 15px;
+}
+#flotheme div.option h4 {
+    width:200px;
+    font-size: 12px;
+    line-height: 2;
+    padding: 0;
+    margin:0 10px 0 0;
+    float: left;
+}
+
+#flotheme div.option div.value {
+    float: left;
+    margin-right: 10px;
+    position: relative;
+    overflow: hidden;
+    zoom:1;
+    min-width: 400px;
+    padding-bottom: 5px;
+}
+#flotheme div.option div.value img {
+    float: left;
+    margin-right:5px;
+}
+#flotheme div.option div.value a.delete {
+    float: left;
+    text-indent: -9999px;
+    background: url(../images/deleteIcon.gif) 0 0 no-repeat;
+    width:18px;
+    height: 18px;
+    display: block;
+}
+#flotheme div.option .description {
+    clear:both;
+    margin-left: 210px;
+}
+
+
+#flotheme .submit input[type=submit] {
+    float: left;
+}
+#flotheme .submit .loading {
+    float: left;
+    margin-left:10px;
+    width:16px;
+    height:25px;
+    background: url(../images/loader.gif) 0 50% no-repeat;
+    display: none;
+}
+
+#options {
+    margin-bottom: 2em;
+}
+#options-message {
+    display: none;
+    padding:1em;
+    font-weight: bold;
+}
+#flotheme ul.list {
+    margin: 0px;
+    padding: 0px;
+}
+#flotheme ul.list li {
+    margin: 0px;
+    padding: 6px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #EEEEEE;
+}
+#flotheme ul.list li:last-child {
+    border: none;
+}
+#flotheme.theme-options div.checklog ul {
+    margin: 15px;
+}
+#flotheme.theme-options div.checklog li {
+    font-size: 10px;
+}
+#flotheme.theme-options div.checklog li.missing {
+    color: red;
+}
+#flotheme input[type=text],
+#flotheme textarea {
+    width:400px;
+}
+#flotheme input.color {
+    width:100px;
+}
+
