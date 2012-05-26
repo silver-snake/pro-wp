@@ -121,12 +121,11 @@ class Flotheme_App extends Flotheme
     public function initAdmin(){
         parent::initAdmin();
 
-        // TODO: Enqueue some styles and scripts
-//        wp_deregister_script('jquery');
-//        wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js');
-//        wp_enqueue_style('datepickers_css', get_template_directory_uri() . '/js/datepicker/jquery.datepick.css', array());
-//        wp_enqueue_script('datepicker', get_template_directory_uri() . '/js/datepicker/jquery.datepick.js', array('jquery'), FLOTHEME_VERSION);
-//        wp_enqueue_script('datepicker_init', get_template_directory_uri() . '/js/datepicker/init.js', array('jquery', 'datepicker'), FLOTHEME_VERSION);
+        wp_deregister_script('jquery_admin');
+        wp_register_script('jquery_admin', 'http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js');
+        wp_enqueue_script('ui', get_template_directory_uri() . '/js/jquery-ui-1.8.20.custom.min.js', array('jquery_admin'), FLOTHEME_VERSION);
+        wp_enqueue_style('datepickers_css', get_template_directory_uri() . '/js/jquery-ui-1.8.20.custom.css', array());
+        wp_enqueue_script('datepicker_init', get_template_directory_uri() . '/js/admin-init.js', array('jquery_admin'), FLOTHEME_VERSION);
 
         // Metaboxes for post
         $politicians = get_posts(array('post_type'=>'politician', 'posts_per_page'=>-1, 'orderby'=>'menu_order'));

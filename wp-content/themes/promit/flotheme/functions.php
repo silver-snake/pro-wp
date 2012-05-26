@@ -54,3 +54,33 @@
 
         return $vote->get_votes($post_id);
     }
+
+    function pro_get_time_limit($post_id) {
+        if($post_id) {
+            $post_id = get_the_ID();
+        }
+
+        $result = array();
+
+        $current_date = time();
+
+        $promise_start = strtotime(get_post_meta($post_id, 'from', true));
+        $promise_end = strtotime(get_post_meta($post_id, 'by', true));
+
+        if( ($promise_end != '') && ($promise_start != '') ){
+
+            $term = $promise_end - $promise_start;
+
+            $passed = $current_date - $promise_start;
+
+            $result['progress'] = 100-$passed/$term*100;
+            $result['remained'] = intval($term/86400);
+
+        }   else {
+            return false;
+        }
+
+
+
+        return $result;
+    }

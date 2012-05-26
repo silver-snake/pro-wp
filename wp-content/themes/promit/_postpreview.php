@@ -60,8 +60,8 @@
 
                 <div class="xrange">
                     <div class="range-area">
-                        <?php $rand = round(mt_rand(1,80));?>
-                        <div class="point" style="left: <?php echo $percent = ($rand<3) ? 3 : $rand;  ?>%"><?php echo $percent ?></div>
+                        <?php $timelimit = pro_get_time_limit(get_the_ID());?>
+                        <div class="point" style="left: <?php echo $percent = ($timelimit['progress']<3) ? 3 : $timelimit['progress'];  ?>%"><?php echo $timelimit['remained'] ?></div>
                         <div class="range-mask" style="width: <?php echo 100-(int)$percent;?>%"></div>
                     </div>
                     <div class="follow"></div>
