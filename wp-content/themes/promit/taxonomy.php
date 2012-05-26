@@ -1,6 +1,13 @@
 <?php get_header(); ?>
 <a name="posts"></a>
-<?php get_template_part('_tabs');?>
+<ul class="tabs">
+    <li class="total active"><a href="">Vezi toate</a></li>
+    <li class="in-progress"><a href="">In Progres</a></li>
+    <li class="success"><a href="">Indeplinit</a></li>
+    <li class="fail"><a href="">Neindeplinit</a></li>
+    <li class="hero">Erou</li>
+    <li class="tabs-shadow"></li>
+</ul>
 <div id="posts">
     <div class="posts-wrapper">
         <div class="left">
