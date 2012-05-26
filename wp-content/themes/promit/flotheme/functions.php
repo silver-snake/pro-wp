@@ -73,13 +73,14 @@
 
             $passed = $current_date - $promise_start;
 
-            $result['progress'] = 100-$passed/$term*100;
-            $result['remained'] = intval($term/86400);
+            $remained = $promise_end - $current_date;
+
+            $result['progress'] = $passed/$term*100;
+            $result['remained'] = intval(ceil($remained/86400));
 
         }   else {
             return false;
         }
-
 
 
         return $result;
